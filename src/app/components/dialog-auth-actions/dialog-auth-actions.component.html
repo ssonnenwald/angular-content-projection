@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center gap-2">
+  <button class="btn btn-secondary" (click)="authAction.emit(false)">
+    Cancel
+  </button>
+  <app-icon-button (click)="authAction.emit(true)">
+    <ng-content ngProjectAs="button-icon" select="button-icon" />
+    <ng-content />
+  </app-icon-button>
+</div>
